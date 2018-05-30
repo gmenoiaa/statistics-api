@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.Date;
 import java.util.concurrent.*;
 
-@Service
+//@Service
 public class ScheduledPoolStatisticsService implements StatisticsService {
 
     private ScheduledExecutorService scheduledPool;
