@@ -1,5 +1,7 @@
-package me.geiser.statistics;
+package me.geiser.statistics.controller;
 
+import me.geiser.statistics.domain.Statistics;
+import me.geiser.statistics.service.StatisticsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

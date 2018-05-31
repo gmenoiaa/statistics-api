@@ -1,4 +1,4 @@
-package me.geiser.statistics;
+package me.geiser.statistics.validation;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
@@ -14,9 +14,7 @@ import java.lang.annotation.Target;
 @Constraint(validatedBy = {TimestampValidator.class})
 public @interface TimestampConstraint {
 
-    String message() default "{javax.validation.constraints.TimestampContraint.message}";
-
+    String message() default "Timestamp is not valid anymore";
     Class<?>[] groups() default {};
-
     Class<? extends Payload>[] payload() default {};
 }

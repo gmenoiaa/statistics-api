@@ -1,5 +1,7 @@
-package me.geiser.statistics;
+package me.geiser.statistics.controller;
 
+import me.geiser.statistics.service.StatisticsService;
+import me.geiser.statistics.domain.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -27,7 +29,7 @@ public class TransactionController {
         if (result.hasErrors()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
-        this.statisticsService.register(transaction);
-        return new ResponseEntity<>(transaction, HttpStatus.CREATED);
+        this.statisticsService.registerTransaction(transaction);
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 }
