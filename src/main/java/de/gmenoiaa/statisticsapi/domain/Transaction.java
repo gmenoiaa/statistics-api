@@ -1,9 +1,8 @@
-package me.geiser.statistics.domain;
+package de.gmenoiaa.statisticsapi.domain;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import me.geiser.statistics.validation.TimestampConstraint;
-import org.springframework.cglib.core.HashCodeCustomizer;
+import de.gmenoiaa.statisticsapi.validation.TimestampConstraint;
 
 import java.util.Objects;
 

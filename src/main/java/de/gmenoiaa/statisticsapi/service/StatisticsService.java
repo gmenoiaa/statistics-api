@@ -1,7 +1,7 @@
-package me.geiser.statistics.service;
+package de.gmenoiaa.statisticsapi.service;
 
-import me.geiser.statistics.domain.Statistics;
-import me.geiser.statistics.domain.Transaction;
+import de.gmenoiaa.statisticsapi.domain.Statistics;
+import de.gmenoiaa.statisticsapi.domain.Transaction;
 import org.springframework.lang.NonNull;
 
 public interface StatisticsService {

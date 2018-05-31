@@ -1,7 +1,7 @@
-package me.geiser.statistics.controller;
+package de.gmenoiaa.statisticsapi.controller;
 
-import me.geiser.statistics.service.StatisticsService;
-import me.geiser.statistics.domain.Transaction;
+import de.gmenoiaa.statisticsapi.domain.Transaction;
+import de.gmenoiaa.statisticsapi.service.StatisticsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

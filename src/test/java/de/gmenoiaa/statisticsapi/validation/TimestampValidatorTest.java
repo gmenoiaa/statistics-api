@@ -1,4 +1,4 @@
-package me.geiser.statistics.validation;
+package de.gmenoiaa.statisticsapi.validation;
 
 import org.assertj.core.util.DateUtil;
 import org.junit.Before;

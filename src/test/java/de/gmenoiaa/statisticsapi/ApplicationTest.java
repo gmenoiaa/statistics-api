@@ -1,4 +1,4 @@
-package me.geiser.statistics;
+package de.gmenoiaa.statisticsapi;
 
 import org.assertj.core.api.Assertions;
 import org.junit.Test;

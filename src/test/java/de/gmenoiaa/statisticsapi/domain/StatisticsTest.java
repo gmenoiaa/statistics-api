@@ -1,4 +1,4 @@
-package me.geiser.statistics.domain;
+package de.gmenoiaa.statisticsapi.domain;
 
 import org.junit.Test;
 

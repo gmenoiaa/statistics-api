@@ -1,4 +1,4 @@
-package me.geiser.statistics.domain;
+package de.gmenoiaa.statisticsapi.domain;
 
 import java.util.Objects;
 
@@ -34,6 +34,34 @@ public class Statistics {
 
     public Double getSum() {
         return sum;
+    }
+
+    public Statistics addTransaction(Transaction transaction) {
+        Builder builder = Statistics.newBuilder()
+                .count(this.getCount() + 1)
+                .sum(this.getSum() + transaction.getAmount());
+
+        if (this.getMax() == null || transaction.getAmount() > this.getMax()) {
+            builder.max(transaction.getAmount());
+        }
+
+        if (this.getMin() == null || transaction.getAmount() > this.getMin()) {
+            builder.min(transaction.getAmount());
+        }
+
+        return builder.build();
+    }
+
+    public Statistics subtractTransaction(Transaction transaction) {
+        Builder builder = Statistics.newBuilder()
+                .count(this.getCount() - 1)
+                .sum(this.getSum() - transaction.getAmount())
+                .max(this.getMax())
+                .min(this.getMin());
+
+        // TODO revert max/min
+
+        return builder.build();
     }
 
     public static Builder newBuilder() {

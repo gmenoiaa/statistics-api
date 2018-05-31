@@ -1,4 +1,4 @@
-package me.geiser.statistics.validation;
+package de.gmenoiaa.statisticsapi.validation;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

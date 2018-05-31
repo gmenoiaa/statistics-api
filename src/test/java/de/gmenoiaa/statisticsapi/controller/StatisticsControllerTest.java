@@ -1,7 +1,7 @@
-package me.geiser.statistics.controller;
+package de.gmenoiaa.statisticsapi.controller;
 
-import me.geiser.statistics.domain.Statistics;
-import me.geiser.statistics.service.StatisticsService;
+import de.gmenoiaa.statisticsapi.domain.Statistics;
+import de.gmenoiaa.statisticsapi.service.StatisticsService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
